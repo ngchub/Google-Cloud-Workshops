@@ -22,25 +22,46 @@ After login or sign into with you account:
 2. Go to Navigation Menu and select **Big Query** ![nUxFb6oRFr435O3t6V7WYJAjeDFcrFb16G9wHWp5BzU= (1)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/ddcbec06-67a4-4f12-9167-3fe6472eb2fd)
 
 ## Adding ga4_obfuscated_sample_ecommerce dataset into Big Query
-1. Click on **+Add** button
-![add](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/0a2d7c28-3bb5-4202-84a7-9ffe449505db)
-2.Select **Star a project by name** 
-![star](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/7fe0f98a-5982-405b-86ed-9e9ba5659464)
-3.Enter **bigquery-public-data** on Project Name box then click **SAVE**
-![starsave](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/68c6be98-a122-4db0-bc59-476d3bb04124)
-![datapublic](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/d382ef14-f0fd-411a-a24c-123f40745050)
-4.You can find **ga4_obfuscated_sample_ecommerce** in the Google public dataset list
-![Screenshot from 2023-07-13 01-05-39](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/5333a94a-3507-4b80-b57f-b8a181ee43cd)
+
+1. Click on **+Add** button<br/>
+![add](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/0a2d7c28-3bb5-4202-84a7-9ffe449505db)<br/>
+
+2.Select **Star a project by name** <br/>
+![star](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/7fe0f98a-5982-405b-86ed-9e9ba5659464)<br/>
+
+3.Enter **bigquery-public-data** on Project Name box then click **SAVE**<br/>
+![starsave](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/68c6be98-a122-4db0-bc59-476d3bb04124)<br/>
+Now, you can see the public datasets
+![datapublic](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/d382ef14-f0fd-411a-a24c-123f40745050)<br/>
+
+4.You can find **ga4_obfuscated_sample_ecommerce** in the Google public dataset list<br/>
+![Screenshot from 2023-07-13 01-05-39](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/5333a94a-3507-4b80-b57f-b8a181ee43cd)<br/>
 
 
+## Getting Insight from GA4 Data
 
+### Query a specific date range for selected events
 
-Scenario 1: You want to explore ecommerce data and identify duplicate records
+Scenario 1: You want to count unique events by date and by event name for a specifc period of days and
+-- selected events(page_view, session_start, and purchase).
+
 ```console
-#standardSQL
-SELECT COUNT(*) as num_duplicate_rows, * FROM
-`data-to-insights.ecommerce.all_sessions_raw`
-GROUP BY
-fullVisitorId, channelGrouping, time, country, city, totalTransactionRevenue, transactions, timeOnSite, pageviews, sessionQualityDim, date, visitId, type, productRefundAmount, productQuantity, productPrice, productRevenue, productSKU, v2ProductName, v2ProductCategory, productVariant, currencyCode, itemQuantity, itemRevenue, transactionRevenue, transactionId, pageTitle, searchKeyword, pagePathLevel1, eCommerceAction_type, eCommerceAction_step, eCommerceAction_option
-HAVING num_duplicate_rows > 1;
+SELECT
+  event_date,
+  event_name,
+  COUNT(*) AS event_count
+FROM
+  -- Replace table name.
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+WHERE
+  event_name IN ('page_view', 'session_start', 'purchase')
+  -- Replace date range.
+  AND _TABLE_SUFFIX BETWEEN '20201201' AND '20201202'
+GROUP BY 1, 2;
 ```
+
+![q1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/1a6cb855-847a-4b65-87ed-d0ec74e61525)
+
+
+<video src="[LINK](https://www.youtube.com/watch?v=hc6ARl0kK_g)" controls="controls" style="max-width: 730px;">
+</video>

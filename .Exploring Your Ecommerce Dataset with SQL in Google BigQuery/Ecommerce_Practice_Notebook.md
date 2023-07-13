@@ -37,12 +37,14 @@ Now, you can see the public datasets
 4.You can find **ga4_obfuscated_sample_ecommerce** in the Google public dataset list<br/>
 ![Screenshot from 2023-07-13 01-05-39](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/5333a94a-3507-4b80-b57f-b8a181ee43cd)<br/>
 
+For more information about accessing Google public datasets click: https://cloud.google.com/bigquery/public-data
 
 ## Getting Insight from GA4 Data
 
+
 ### Query a specific date range for selected events
 
-Scenario 1: You want to count unique events by date and by event name for a specifc period of days and
+**Scenario 1**: You want to count unique events by date and by event name for a specifc period of days and
 -- selected events(page_view, session_start, and purchase).
 
 ```console
@@ -62,6 +64,116 @@ GROUP BY 1, 2;
 
 ![q1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/1a6cb855-847a-4b65-87ed-d0ec74e61525)
 
+### User count and new user count
 
-<video src="[LINK](https://www.youtube.com/watch?v=hc6ARl0kK_g)" controls="controls" style="max-width: 730px;">
-</video>
+**Scenario 2**:You want to get the total user count, count the number of distinct user_id. However, if your Google Analytics client does not send back a user_id with each hit or if you are unsure, count the number of distinct user_pseudo_id.
+**Note**: For new users, you can take the same count approach described above but for the following values of event_name:
+  - first_visit
+  - first_open
+
+```console
+
+WITH
+  UserInfo AS (
+    SELECT
+      user_pseudo_id,
+      MAX(IF(event_name IN ('first_visit', 'first_open'), 1, 0)) AS is_new_user
+    -- Replace table name.
+    FROM `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+    -- Replace date range.
+    WHERE _TABLE_SUFFIX BETWEEN '20201101' AND '20201130'
+    GROUP BY 1
+  )
+SELECT
+  COUNT(*) AS user_count,
+  SUM(is_new_user) AS new_user_count
+FROM UserInfo;
+```
+
+![q2](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/440f20e4-f110-4261-85f3-560866c5abdc)
+
+### Average number of transactions per purchaser
+
+**Scenario 3**: You want to examine the average number of transactions per purchaser.
+
+```console
+SELECT
+  ROUND(COUNT(*) / COUNT(DISTINCT user_pseudo_id), 2) AS avg_transaction_per_purchaser
+FROM
+  -- Replace table name.
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+WHERE
+  event_name IN ('in_app_purchase', 'purchase')
+  -- Replace date range.
+  AND _TABLE_SUFFIX BETWEEN '20201201' AND '20201231';
+```
+![q3](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/76dfc18d-7718-4468-806e-5f73c80b0841)
+
+### Values for a specific event name
+
+**Scenario 4**: You want to figure out values of events between a spesific time range.
+
+```console
+SELECT
+  event_timestamp,
+  (
+    SELECT COALESCE(value.int_value, value.float_value, value.double_value)
+    FROM UNNEST(event_params)
+    WHERE key = 'value'
+  ) AS event_value
+FROM
+  -- Replace table name.
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+WHERE
+  event_name = 'purchase'
+  -- Replace date range.
+  AND _TABLE_SUFFIX BETWEEN '20201201' AND '20201202';
+```
+
+![q4](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/50ef5453-1aee-4ec0-9c9c-58b1c35f1efe)
+
+**Scenario 5**: You want to figure out what is the value for a spesific event ***purchase*** has.
+
+```console
+SELECT
+  SUM(
+    (
+      SELECT COALESCE(value.int_value, value.float_value, value.double_value)
+      FROM UNNEST(event_params)
+      WHERE key = 'value'
+    ))
+    AS event_value
+FROM
+  -- Replace table name.
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+WHERE
+  event_name = 'purchase'
+  -- Replace date range.
+  AND _TABLE_SUFFIX BETWEEN '20201201' AND '20201202';
+```
+
+![q5](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/57e2dee9-1609-4456-ad1d-1144f7d6975c)
+
+
+### Top 10 items added to cart
+
+**Scenario 6**: You will make decisions for stock optimization and want to get the information about top 10 item added to cart by the most number of users.
+
+```console
+SELECT
+  item_id,
+  item_name,
+  COUNT(DISTINCT user_pseudo_id) AS user_count
+FROM
+  -- Replace table name.
+   `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`, UNNEST(items)
+WHERE
+  -- Replace date range.
+  _TABLE_SUFFIX BETWEEN '20201101' AND '20210131'
+  AND event_name IN ('add_to_cart')
+GROUP BY
+  1, 2
+ORDER BY
+  user_count DESC
+LIMIT 10;
+```

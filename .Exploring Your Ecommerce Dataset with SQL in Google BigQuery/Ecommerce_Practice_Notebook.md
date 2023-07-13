@@ -343,6 +343,4 @@ GROUP BY
 
 ![q11](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/86a43baa-2f12-4954-919c-001e8332018c)
 
-### Latest Session Id and Session Number for users
 
-**Scenario 11**:

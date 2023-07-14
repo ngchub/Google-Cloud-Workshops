@@ -14,6 +14,10 @@ For more information about Big Query please follow the link: https://cloud.googl
 
 
 
+https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/3fccc0be-4264-42bf-8e96-b7e4710726bd
+
+
+
 BigQuery is a serverless and cost-effective enterprise data warehouse that works across clouds and scales with your data. Use built-in ML/AI and BI for insights at scale. 
 
 Let's get started.

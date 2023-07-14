@@ -64,6 +64,8 @@ GROUP BY 1, 2;
 
 ![q1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/1a6cb855-847a-4b65-87ed-d0ec74e61525)
 
+#### Let's interpreting these results:
+
 Each row represents a specific event that occurred on a particular date. Here's how you can interpret the information:
 
 ***Event Date***: This column represents the date on which the event occurred. In this dataset, events occurred on December 1st, 2020 (rows 1-3) and December 2nd, 2020 (rows 4-6).
@@ -118,6 +120,8 @@ FROM UserInfo;
 
 ![q2](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/440f20e4-f110-4261-85f3-560866c5abdc)
 
+#### Let's interpreting these results:
+
 ***Total User Count***: This refers to the cumulative number of users who have visited your website over a given period. It represents the total number of unique individuals who have interacted with your website, including both new and returning users. In this case, you have had a total of 79,421 users in the specified timeframe.
 
 ***New User Count***: This refers to the number of users who have visited your website for the first time during the specified period. It represents the number of unique individuals who have discovered your website and engaged with it for the first time. In this case, you have had 71,734 new users during the given timeframe.
@@ -143,6 +147,22 @@ WHERE
 ```
 ![q3](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/76dfc18d-7718-4468-806e-5f73c80b0841)
 
+#### Let's interpreting these results:
+
+The result "1.23" represents the average transaction per purchaser. This metric provides insights into the average number of transactions made by each individual purchaser on your website. Here's how you can interpret this result:
+
+***Average Transaction per Purchaser***: The value "1.23" indicates that, on average, each purchaser on your website makes 1.23 transactions. This means that when someone makes a purchase on your website, they, on average, complete 1.23 transactions during their interaction with your business.
+
+**Purchaser Behavior**: The average transaction per purchaser metric helps you understand how engaged and active your purchasers are. A higher value, such as 1.23, suggests that purchasers tend to make more than one transaction, indicating potential repeat purchases or multiple transactions during a single visit.
+
+**Revenue Generation**: By knowing the average transaction per purchaser, you can estimate the revenue potential of each purchaser. For example, if the average transaction value is $50, then the average revenue generated per purchaser would be approximately $61.50 ($50 x 1.23).
+
+**Customer Retention**: Monitoring the average transaction per purchaser over time can provide insights into customer retention and loyalty. If the average transaction per purchaser increases over time, it suggests that purchasers are becoming more engaged and making multiple transactions. Conversely, a decreasing trend may indicate a need to focus on improving customer retention strategies.
+
+**Marketing and Upselling Opportunities**: Understanding the average transaction per purchaser can help you identify opportunities for upselling or cross-selling. If the current average is relatively low, you can consider implementing strategies to encourage purchasers to make additional transactions or explore higher-value products/services.
+
+It's important to note that interpreting the average transaction per purchaser metric should be done in conjunction with other relevant metrics and factors specific to your business, such as <ins>customer acquisition costs</ins>, <ins>customer lifetime value</ins>, and <ins>overall business objectives</ins>. This will provide a more comprehensive understanding of the metric's implications and guide decision-making processes for optimizing sales, marketing, and customer retention strategies.
+
 ### Values for a specific event name
 
 **Scenario 4**: You want to figure out values of events between a spesific time range.
@@ -166,6 +186,34 @@ WHERE
 
 ![q4](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/50ef5453-1aee-4ec0-9c9c-58b1c35f1efe)
 
+#### Let's interpreting these results:
+
+To figure out the values of events within a specific time range, you need to identify the events that fall within the desired range based on their event timestamps. From the provided dataset, here's how you can interpret the results:
+
+***Event Timestamp***: The event timestamps represent the date and time when each event occurred.
+
+***Event Value***: The event values column provides the associated values for each event.
+
+To determine the values of events within a specific time range, follow these steps:
+
+Define the desired time range by specifying the start and end timestamps.
+
+Iterate through the dataset and identify the events that have timestamps falling within the defined time range.
+
+Retrieve the event values associated with the events identified in step 2.
+
+Here's an example of retrieving events within a specific time range:
+
+Let's say you want to find events between timestamps 1606800000000000 and 1606820000000000 (inclusive). In the given dataset, the following rows have event timestamps within this range:
+
+Row 2: event_timestamp = 1606815536636655, event_value = 55.2
+Row 7: event_timestamp = 1606829753792895, event_value = 24.0
+Based on this, the values of events within the specified time range are 55.2 and 24.0, corresponding to the respective rows.
+
+Remember to adjust the time range and adapt the steps according to your specific requirements and the structure of your dataset.
+
+Keep in mind that if you have a larger dataset or need to perform more complex filtering, you might need to use programming or scripting techniques to efficiently filter and extract events within the desired time range.
+
 **Scenario 5**: You want to figure out what is the value for a spesific event ***purchase*** has.
 
 ```console
@@ -188,6 +236,19 @@ WHERE
 
 ![q5](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/57e2dee9-1609-4456-ad1d-1144f7d6975c)
 
+#### Let's interpreting these results:
+
+The provided result, "11455.08," represents the value for a specific event, which in this case is the "purchase" event. Here's how you can interpret this result:
+
+***Event Value***: The event value, "11455.08," indicates the specific value associated with the "purchase" event. The nature of this value depends on the context of your dataset and the specific meaning of the "purchase" event in your domain.
+
+**Financial Insights**: The value of "11455.08" can provide insights into the financial performance of your business or website in terms of the purchases made. It can be used to track and analyze revenue trends, average purchase values, or the impact of different factors on purchase amounts.
+
+**Business Decision-making**: Understanding the value associated with the "purchase" event can help guide business decisions. For example, you can use this information to assess the effectiveness of marketing campaigns, evaluate the profitability of specific products or services, or identify patterns in customer spending behavior.
+
+**Comparison and Analysis**: To gain further insights, you can compare this value with other relevant metrics or perform analysis based on different segments or time periods. For instance, comparing the "purchase" event values across different customer segments or analyzing changes in purchase values over time can provide valuable information for strategic decision-making.
+
+It's important to note that the interpretation may vary depending on the context of your specific dataset and business domain. Understanding the specific context and considering additional factors such as customer behavior, pricing, or product/service offerings will help provide a more comprehensive interpretation of the "purchase" event value.
 
 ### Top 10 items added to cart
 
@@ -213,6 +274,26 @@ LIMIT 10;
 ```
 
 ![q6](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/766435d3-c5b5-4e4f-90a6-21ec25f18456)
+
+#### Let's interpreting these results:
+
+Based on the provided dataset, which includes item IDs, item names, and user counts, you can interpret the results to identify the top 10 items added to the cart by the most number of users. Here's how you can interpret the information:
+
+***Item ID***: Each item in the dataset is assigned a unique item ID. This ID serves as a reference to identify and distinguish different items.
+
+***Item Name***: The item name column represents the name or description of each item.
+
+***User Count***: The user count column indicates the number of users who have added a particular item to their cart. It represents the count or frequency of users who have expressed interest in purchasing a specific item.
+
+Based on the provided dataset, you can identify the top 10 items added to the cart by the most number of users. Here are the interpretations:
+
+Google Land & Sea Cotton Cap (item ID: GGOEGAPH161899): This item has been added to the cart by 3,567 users, making it the item with the highest user count.
+
+Google Navy Speckled Tee (item ID: GGOEGXXX1344): This item has been added to the cart by 3,526 users, ranking second in terms of user count.
+
+Google Zip Hoodie F/C (item ID: GGOEGXXX1109): This item has been added to the cart by 3,519 users, placing it third in terms of user count.
+
+By analyzing this information, you can prioritize the stock of these top 10 items to ensure sufficient availability and meet the demand of the users who are adding them to their carts. This data can guide your decision-making process for inventory management, marketing strategies, and identifying popular items in your stock.
 
 
 ### Average number of pageviews by purchaser type (purchasers vs non-purchasers)
@@ -241,6 +322,36 @@ FROM UserInfo
 GROUP BY 1;
 ```
 ![q7](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/37c28f03-4fcd-4371-b9c1-8560b751c787)
+
+#### Let's interpreting these results:
+
+Based on the provided dataset, which includes information about purchasers, user counts, total page views, and average page views, you can interpret the results to understand the sequence of page views made by users during unique sessions. Here's how you can interpret the information:
+
+***Purchaser***: The "purchaser" column indicates whether the user is a purchaser or not. A value of "true" suggests that the user is a purchaser, while "false" indicates that the user is not a purchaser.
+
+***User Count***: The "user_count" column represents the number of users who have engaged in unique sessions. It indicates the count or frequency of unique individuals who have visited your website or app and initiated a session.
+
+***Total Page Views***: The "total_page_views" column shows the total number of page views recorded during all the unique sessions. It provides an overall count of the pages that were viewed across the sessions.
+
+***Average Page Views***: The "avg_page_views" column represents the average number of page views per session. It is calculated by dividing the total page views by the user count, providing an average measure of the number of pages viewed during each unique session.
+
+Interpreting the results:
+
+Row 1: For the users who are not purchasers (purchaser: false), there are 7,916 unique sessions recorded. These users generated a total of 34,786 page views across those sessions, resulting in an average of approximately 4.39 page views per session.
+
+Row 2: For the users who are purchasers (purchaser: true), there are 172 unique sessions recorded. These purchasers generated a total of 6,591 page views, resulting in an average of approximately 38.32 page views per session.
+
+These results provide insights into user engagement and behavior during unique sessions:
+
+Users who are purchasers (purchaser: true) tend to have a <ins>higher average number of page views per session compared to users who are not purchasers</ins> (purchaser: false). This suggests that purchasers are more likely to explore multiple pages or engage more deeply with the website or app during their sessions.
+
+The average page views per session can serve as an indicator of user engagement and the level of interaction with your content or offerings. Higher average page views per session may indicate higher levels of interest or a more extensive exploration of your website or app.
+
+Analyzing the sequence of page views during unique sessions can provide insights into user navigation patterns, content preferences, or potential bottlenecks that hinder users from reaching desired pages or completing specific actions.
+
+By understanding these insights, you can optimize your website or app experience, content placement, and navigation to enhance user engagement, increase conversion rates, and improve overall user satisfaction.
+
+
 
 ### Sequence of pageviews
 

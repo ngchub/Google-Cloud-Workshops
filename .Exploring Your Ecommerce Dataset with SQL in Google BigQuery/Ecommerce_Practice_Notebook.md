@@ -13,12 +13,6 @@ In this workshop we want to explore information by using some basic and advance 
 For more information about Big Query please follow the link: https://cloud.google.com/bigquery
 
 
-<div align="center">
-  <video src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/b806f782-6af3-44ee-afdb-8b2bfe93934d" style="width:100px !important; max-height: 100px !important;  min-height: 100px !important;" />
-</div>
-
-
-
 
 BigQuery is a serverless and cost-effective enterprise data warehouse that works across clouds and scales with your data. Use built-in ML/AI and BI for insights at scale. 
 

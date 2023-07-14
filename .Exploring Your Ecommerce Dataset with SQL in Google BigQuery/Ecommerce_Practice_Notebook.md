@@ -351,8 +351,6 @@ Analyzing the sequence of page views during unique sessions can provide insights
 
 By understanding these insights, you can optimize your website or app experience, content placement, and navigation to enhance user engagement, increase conversion rates, and improve overall user satisfaction.
 
-
-
 ### Sequence of pageviews
 
 **Scenario 8**: You want to know the sequence of pageviews made by users during unique sessions.
@@ -381,6 +379,31 @@ ORDER BY
 ```
 ![q8](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/19e290db-e0ba-471b-be92-5152d20fbd62)
 
+#### Let's interpreting these results:
+
+To interpret the provided results related to the sequence of pageviews made by users during unique sessions, you can analyze the information available in the dataset. Here's how you can interpret the information:
+
+***User Pseudo ID***: The "user_pseudo_id" column represents a unique identifier for each user. It allows tracking user activity across different sessions.
+
+***Date and Time***: The "date" and "time" columns indicate the date and time when a particular pageview occurred.
+
+***GA Session ID***: The "ga_session_id" column represents the session ID associated with the pageviews. It helps identify unique sessions for each user.
+
+Page Location and Page Title: The "page_location" and "page_title" columns provide information about the specific page visited by the user during a session. The "page_location" contains the URL of the page, and the "page_title" provides the title or description of the page.
+
+Interpreting the results:
+
+**Sequential Pageviews**: By examining the rows in the dataset, you can determine the sequence of pageviews made by users during their unique sessions. Each row represents a pageview event and is associated with a specific user and session.
+
+**User Behavior**: Analyzing the sequence of pageviews can provide insights into user behavior and their navigation patterns on the website. It can reveal the pages users tend to visit consecutively during their sessions.
+
+**Popular Pages**: By examining the "page_title" and "page_location," you can identify which pages users are visiting frequently or in a specific order. This information can help you understand popular pages, user interests, or potential areas for improvement.
+
+**Session Duration**: Analyzing the time intervals between consecutive pageviews within the same session can provide insights into user engagement and session duration. Longer intervals might indicate users spending more time on a particular page, while shorter intervals suggest quick navigation between pages.
+
+**User Experience Optimization**: By understanding the sequence of pageviews, you can identify potential bottlenecks or issues in the user experience. This information can guide you in improving page navigation, content placement, or the overall website flow to enhance user engagement and satisfaction.
+
+It's important to note that the provided dataset represents a sample, and further analysis may require a larger dataset or additional information. Additionally, depending on your specific website or application, you may have additional variables or data points that can provide more insights into user behavior and session sequences.
 
 ### Event parameter list
 
@@ -404,6 +427,29 @@ ORDER BY
 
 ![q9](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/00c068b6-656a-4675-af7b-b00a052a76c1)
 
+#### Let's interpreting these results:
+
+Based on the provided dataset, which includes event parameter keys and the occurrences of each key, you can interpret the results to understand the available event parameters and their respective frequencies. Here's how you can interpret the information:
+
+***Event Param Key***: The "event_param_key" column represents the parameter keys associated with each event. These keys are used to capture specific information related to the events.
+
+***Occurrences***: The "occurrences" column indicates the number of times each event parameter key occurs in the dataset. It represents the frequency or count of occurrences for each parameter key.
+
+Interpreting the results:
+
+**Available Event Parameters**: The dataset provides a list of available event parameter keys, such as "gclsrc," "currency," "search_term," "transaction_id," and more. These keys represent different types of information that can be captured for events.
+
+**Frequency of Occurrences**: The "occurrences" column shows the number of times each event parameter key appears in the dataset. This indicates how frequently each parameter key is captured or recorded in the events.
+
+**Importance of Event Parameters**: The frequency of occurrences provides insights into the importance or relevance of specific event parameters in the dataset. Parameters with higher occurrences are more commonly captured and may represent key aspects of the events.
+
+**Commonly Captured Information**: The higher occurrence of event parameters like "gclsrc," "currency," "search_term," and "unique_search_term" suggests that these parameters are frequently used to capture information related to the source of the event, currency used, and search terms associated with the event.
+
+**Transaction-related Information**: Event parameters like "transaction_id," "tax," "value," "payment_type," and "shipping_tier" occur with similar frequencies, indicating that these parameters are often captured for events related to transactions, such as purchases. They provide information about transaction identifiers, tax amounts, transaction values, payment types, and shipping tiers.
+
+**Promotion and Link Information**: Parameters like "coupon," "promotion_name," "dclid," "link_url," "outbound," and "link_domain" occur with lower frequencies. These parameters may capture details related to promotions, coupon codes, link URLs, and outbound link tracking.
+
+By interpreting these results, you can gain insights into the available event parameters and their usage within the dataset. This understanding can guide your data analysis, processing, and decision-making processes, allowing you to focus on the event parameters with higher occurrences and explore their significance for your specific analysis objectives or business goals.
 
 ### Products purchased by customers who purchased a certain product
 
@@ -457,6 +503,30 @@ ORDER BY item_quantity DESC;
 ```
 ![q10](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/096ecd83-4263-465d-b381-4fe6864813a9)
 
+#### Let's interpreting these results:
+
+Based on the provided dataset, which includes the item names and the quantities purchased for each item, you can interpret the results to investigate customers who purchased a certain product. Here's how you can interpret the information:
+
+***Item Name***: The "item_name" column represents the names or descriptions of the purchased items.
+
+***Item Quantity***: The "item_quantity" column indicates the quantity of each item that was purchased.
+
+Interpreting the results:
+
+**Purchased Items**: The dataset provides a list of items that were purchased. Each item is identified by its name, such as "Google Camp Mug Ivory," "Google Small Standard Journal Navy," and so on.
+
+**Quantity Purchased**: The "item_quantity" column indicates the quantity of each item that was purchased. It shows how many units of each item were bought.
+
+**Popularity of Items**: By analyzing the quantities purchased, you can identify the popularity or demand for each item. Items with higher quantities indicate a higher demand or more frequent purchases.
+
+**Customer Preferences**: The quantities purchased for each item can provide insights into customer preferences or the appeal of specific products. Items with higher quantities purchased may be more popular among customers.
+
+**Inventory Management**: Analyzing the quantities purchased can help with inventory management. It allows you to identify items that are selling well and may require replenishment to meet customer demand.
+
+**Sales Analysis**: By examining the quantities purchased for each item, you can track sales performance and identify trends or patterns. This information can be used to evaluate the success of marketing efforts, assess the popularity of certain products, or make data-driven decisions to improve sales strategies.
+
+By interpreting these results, you can gain insights into the purchases made by customers for specific products. This information can guide your understanding of customer preferences, inventory management, and sales analysis, allowing you to make informed decisions to optimize your product offerings and improve customer satisfaction.
+
 ### Average amount of money spent per purchase session by user
 
 **Scenario 11**: You want to investigate how much mony that a customer spent during purcahe session
@@ -488,4 +558,26 @@ GROUP BY
 
 ![q11](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/86a43baa-2f12-4954-919c-001e8332018c)
 
+#### Let's interpreting these results:
 
+Based on the provided dataset, which includes user pseudo IDs, session counts, and average spend per session by user, you can interpret the results to understand the amount of money customers spent during their purchase sessions. Here's how you can interpret the information:
+
+***User Pseudo ID***: The "user_pseudo_id" column represents a unique identifier for each user. It allows tracking user activity and purchases across different sessions.
+
+***Session Count***: The "session_count" column indicates the number of purchase sessions recorded for each user. It represents the count or frequency of unique sessions in which purchases were made.
+
+***Average Spend per Session by User***: The "avg_spend_per_session_by_user" column shows the average amount of money spent by each user during their purchase sessions.
+
+Interpreting the results:
+
+**User Purchase Behavior**: By analyzing the average spend per session by user, you can gain insights into the spending patterns and behaviors of customers during their purchase sessions. It provides an understanding of the typical amount of money customers spend when making a purchase.
+
+**Session-Level Spending**: The average spend per session represents the average amount of money spent by users during individual purchase sessions. It can help you gauge the spending range and potential revenue generated from each session.
+
+**User Segmentation**: By considering the session count, you can identify users who have made multiple purchase sessions. Users with a higher session count may represent more frequent or loyal customers who engage in multiple purchase activities.
+
+**Overall Spending**: The average spend per session by user provides a general measure of the amount of money customers spend during their purchase sessions. This can be useful for evaluating revenue generation, analyzing customer lifetime value, or assessing the overall financial performance of your business.
+
+**Customer Satisfaction and Engagement**: Monitoring the average spend per session by user over time can help gauge customer satisfaction and engagement. An increase in the average spend per session may indicate increased customer loyalty or a positive response to marketing efforts.
+
+By interpreting these results, you can gain insights into customer spending behavior during purchase sessions. This information can guide your understanding of customer preferences, revenue generation, customer segmentation, and overall business performance, helping you make data-driven decisions to optimize your sales strategies and improve customer satisfaction.

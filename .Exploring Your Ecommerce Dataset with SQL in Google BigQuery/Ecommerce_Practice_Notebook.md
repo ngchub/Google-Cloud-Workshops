@@ -92,6 +92,14 @@ FROM UserInfo;
 
 ![q2](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/440f20e4-f110-4261-85f3-560866c5abdc)
 
+***Total User Count***: This refers to the cumulative number of users who have visited your website over a given period. It represents the total number of unique individuals who have interacted with your website, including both new and returning users. In this case, you have had a total of 79,421 users in the specified timeframe.
+
+***New User Count***: This refers to the number of users who have visited your website for the first time during the specified period. It represents the number of unique individuals who have discovered your website and engaged with it for the first time. In this case, you have had 71,734 new users during the given timeframe.
+
+By comparing these two figures, you can gather insights about the growth and retention of your website's user base. In your case, since the new user count (71,734) is lower than the total user count (79,421), it suggests that some users who previously visited your website are returning, while others might not be actively engaging or have dropped off.
+
+Analyzing this data further, you could consider metrics such as user engagement, conversion rates, or user retention to gain a more comprehensive understanding of your website's performance and the effectiveness of your strategies for attracting and retaining new users.
+
 ### Average number of transactions per purchaser
 
 **Scenario 3**: You want to examine the average number of transactions per purchaser.

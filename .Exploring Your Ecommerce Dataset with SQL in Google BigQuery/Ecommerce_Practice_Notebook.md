@@ -64,6 +64,32 @@ GROUP BY 1, 2;
 
 ![q1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/1a6cb855-847a-4b65-87ed-d0ec74e61525)
 
+Each row represents a specific event that occurred on a particular date. Here's how you can interpret the information:
+
+***Event Date***: This column represents the date on which the event occurred. In this dataset, events occurred on December 1st, 2020 (rows 1-3) and December 2nd, 2020 (rows 4-6).
+
+***Event Name***: This column indicates the type or name of the event that took place. In this dataset, three types of events are mentioned: "page_view" (rows 1 and 4), "session_start" (rows 2 and 5), and "purchase" (rows 3 and 6).
+
+***Event Count***: This column specifies the count or frequency of each event type that occurred on the corresponding date. For example, on December 1st, 2020, there were 21,511 page views (row 1), 4,912 session starts (row 2), and 107 purchases (row 3). On December 2nd, 2020, there were 19,866 page views (row 4), 4,759 session starts (row 5), and 82 purchases (row 6).
+
+This dataset provides a snapshot of the events that took place on your website on specific dates. By analyzing this data, you can gain insights into <ins>user engagement</ins>, <ins>website performance</ins>, and <ins>conversion rates</ins>. Further analysis, such as tracking trends over time or comparing events across different dates, can provide valuable information for optimizing your website's user experience and marketing strategies.
+
+
+To interpret the results from the provided dataset, you can analyze the event counts and their types to gain insights into user behavior and website performance. Here are some ways to interpret the results:
+
+**Event Trends**: By comparing event counts across different dates, you can identify trends in user engagement. For example, you can observe whether the number of page views, session starts, or purchases is increasing, decreasing, or remaining stable over time. This analysis can help you understand the overall growth or decline of user activity on your website.
+
+**Popular Events**: Look for events with high counts to determine which actions users are frequently performing on your website. For instance, if page views consistently have high counts compared to other events, it suggests that users are exploring different pages of your website extensively. On the other hand, if purchases have a high count, it indicates successful conversions.
+
+**Conversion Rate**: Analyze the ratio between the "purchase" event count and other events, such as "page_view" or "session_start." This will provide insights into the effectiveness of your website in converting user interactions into actual purchases. For example, if the purchase count is relatively low compared to page views, it may indicate potential areas for improving the conversion funnel or optimizing the user experience to encourage more purchases.
+
+**User Engagement**: Compare event counts like "session_start" and "page_view" to evaluate user engagement levels. Higher session starts coupled with a significant number of page views could indicate that users are actively exploring multiple pages during their sessions, suggesting higher engagement. Lower session starts or a lower ratio of page views to session starts might indicate a need to improve user retention or encourage more exploration within sessions.
+
+**Day-to-Day Variations**: Analyze event counts on a daily basis to identify any patterns or variations. Certain events might exhibit recurring patterns based on weekdays, weekends, or specific marketing campaigns. Understanding these variations can help you optimize your website's content, marketing strategies, or promotions accordingly.
+
+Remember, interpreting these results should be done in the context of your specific website and business goals. It's essential to consider additional factors such as <ins>user demographics</ins>, <ins>marketing campaigns</ins>, and changes to the <ins>website or product offerings</ins> to gain a comprehensive understanding of the data and make informed decisions.
+
+
 ### User count and new user count
 
 **Scenario 2**:You want to get the total user count, count the number of distinct user_id. However, if your Google Analytics client does not send back a user_id with each hit or if you are unsure, count the number of distinct user_pseudo_id.

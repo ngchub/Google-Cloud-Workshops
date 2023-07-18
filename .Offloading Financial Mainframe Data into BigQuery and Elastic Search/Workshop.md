@@ -17,4 +17,22 @@ In this hands-on lab, you'll import synthetic data representing financial record
   - Building a dashboard to visualize the mainframe data
 
 
+# Requirements
 
+## Activate Cloud Shell
+
+![Screenshot from 2023-07-18 16-04-58](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/0178e924-d639-4af0-a70d-82404a19f924)
+
+```console
+gcloud auth list
+```
+
+![Screenshot from 2023-07-18 16-05-48](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/043e1cb9-ab8d-4933-9c43-4c1b0f07a58e)
+
+```console
+gcloud config list project
+```
+
+![Screenshot from 2023-07-18 16-06-59](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/59e99715-a906-4dbc-a424-fac78cb1ae19)
+
+**Note:** Note: For full documentation of gcloud, in Google Cloud, refer to the [gcloud CLI](https://cloud.google.com/sdk/gcloud) overview guide.

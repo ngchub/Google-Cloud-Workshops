@@ -4,8 +4,12 @@ Welcome to extract valuable information from ecommerce data by using Google Clou
 
 In this workshop, you could able to practice your SQL skills with Big Query while getting insights from one of the public datasets Google Analytics(for access [https://support.google.com/analytics/answer/7586738?hl=en#access-the-dataset&zippy=%2Cin-this-article](https://developers.google.com/analytics/bigquery))
 
-<img src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/5fdfe449-5a1e-4f69-bb8a-13f4ca6fd3e5" width="25%" height="25%" align="left" />
+<img src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/5fdfe449-5a1e-4f69-bb8a-13f4ca6fd3e5" width="25%" height="25%" align="left" /> <br/>
+
+
 Providing Google Analytics 4 event data from an ecommerce website, the dataset is useful for exploring the benefits of exporting Google Analytics 4 event data into BigQuery via the integration. The data collection data is between 2020-11-01 to 2021-01-31. For dataset details follow the link [https://support.google.com/analytics/answer/7586738?hl=en#where-the-data-comes-from&zippy=%2Cin-this-article](https://developers.google.com/analytics/bigquery/web-ecommerce-demo-dataset)
+
+
 
 
 In this workshop we want to explore information by using some basic and advance scenarios. Each scenario should be answered by writing a SQL query on Big Query.
@@ -18,6 +22,8 @@ https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/3fccc0be-4264-4
 
 
 
+
+
 BigQuery is a serverless and cost-effective enterprise data warehouse that works across clouds and scales with your data. Use built-in ML/AI and BI for insights at scale. 
 
 Let's get started.
@@ -26,7 +32,9 @@ Let's get started.
 
 1. Open [https://www.cloud.google.com](https://cloud.google.com/)
 After login or sign into with you account:
-2. Go to Navigation Menu and select **Big Query** ![nUxFb6oRFr435O3t6V7WYJAjeDFcrFb16G9wHWp5BzU= (1)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/ddcbec06-67a4-4f12-9167-3fe6472eb2fd)
+2. Go to Navigation Menu and select **Big Query**
+
+ <img align="left" width="500" height="300" src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/ddcbec06-67a4-4f12-9167-3fe6472eb2fd/500/300"
 
 ## Adding ga4_obfuscated_sample_ecommerce dataset into Big Query
 
@@ -47,6 +55,8 @@ Now, you can see the public datasets
 For more information about accessing Google public datasets click: https://cloud.google.com/bigquery/public-data
 
 ## Getting Insight from GA4 Data
+
+![Screenshot from 2023-07-18 15-49-10](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/83efb7ff-b03e-4686-b012-d608c1fc5077)
 
 
 ### Query a specific date range for selected events
@@ -72,6 +82,7 @@ GROUP BY 1, 2;
 ![q1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/1a6cb855-847a-4b65-87ed-d0ec74e61525)
 
 #### Let's interpreting these results:
+
 
 Each row represents a specific event that occurred on a particular date. Here's how you can interpret the information:
 
@@ -128,6 +139,8 @@ FROM UserInfo;
 ![q2](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/440f20e4-f110-4261-85f3-560866c5abdc)
 
 #### Let's interpreting these results:
+![score_card_1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/d2a54c39-2c5a-41c1-8135-a2ee1c91b3ae)
+
 
 ***Total User Count***: This refers to the cumulative number of users who have visited your website over a given period. It represents the total number of unique individuals who have interacted with your website, including both new and returning users. In this case, you have had a total of 79,421 users in the specified timeframe.
 
@@ -194,6 +207,7 @@ WHERE
 ![q4](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/50ef5453-1aee-4ec0-9c9c-58b1c35f1efe)
 
 #### Let's interpreting these results:
+![transferring_data](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/be437dee-e1a0-495e-9a7d-be9362e3cc62)
 
 To figure out the values of events within a specific time range, you need to identify the events that fall within the desired range based on their event timestamps. From the provided dataset, here's how you can interpret the results:
 
@@ -244,6 +258,7 @@ WHERE
 ![q5](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/57e2dee9-1609-4456-ad1d-1144f7d6975c)
 
 #### Let's interpreting these results:
+![bq_at_scale](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/8de204f7-93fd-4ea1-8607-7803a89216dc)
 
 The provided result, "11455.08," represents the value for a specific event, which in this case is the "purchase" event. Here's how you can interpret this result:
 
@@ -283,6 +298,7 @@ LIMIT 10;
 ![q6](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/766435d3-c5b5-4e4f-90a6-21ec25f18456)
 
 #### Let's interpreting these results:
+![serverless_bq](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/705f4147-8209-4578-a595-3d984e831fb9)
 
 Based on the provided dataset, which includes item IDs, item names, and user counts, you can interpret the results to identify the top 10 items added to the cart by the most number of users. Here's how you can interpret the information:
 

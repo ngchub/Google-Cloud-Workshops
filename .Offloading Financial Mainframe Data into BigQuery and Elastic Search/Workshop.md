@@ -197,3 +197,98 @@ One hypothesis a Data Analyst might make is that there is a correlation between 
 
 # Task 5. Create a Dataflow job reading from BQ and pushing to Elastic
 
+1. The Dataflow API should already be enabled, if not find it using the search bar
+
+2. Paste the below code into the Cloud Shell to create a Dataflow job, making edits to the parts in ```<< >>``` for ```CONNECTION_URL``` and ```API_KEY```. This job will read data from your BigQuery dataset and push it to Elastic
+
+```console
+# enter these values by hand into the cloud shell (one by one). 
+export CONNECTION_URL=<< your cloud ID from step 1.13 >>
+export API_KEY=<< your API key from step 1.10 >>
+# to create and run a dataflow job, 
+# cut and paste the following 7 lines into the cloud shell.
+gcloud dataflow flex-template run bqtoelastic-`date +%s` --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/BigQuery_to_Elasticsearch --region us-central1 --num-workers 1 --parameters index=transactions,maxNumWorkers=1,query="select * from $GOOGLE_CLOUD_PROJECT.mainframe_import.account_transactions",connectionUrl=$CONNECTION_URL,apiKey=$API_KEY
+```
+
+This should generate a message similar to the one below
+![VWIQC6xzJzgf412MwvsF9jte70x+zub4dWGxIGrrwIc=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/c106a7d1-c066-4839-b01f-10fd00e8b05c)
+
+3. Go to **Dataflow** → **Jobs** to make sure you job is running
+![+ENDmiSgQjcmTRekOmN9pu1qIPwZSyRXjmDW3kKV7pE=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/0c49c7dc-2308-47e6-b0ad-7e9082ebea33)
+
+# Task 6. Explore the data in Elastic
+
+1. Go back to the Elastic Cloud
+
+2. Go to **Discover**
+   ![5BLPCTBiu6ie3zwxKe5j4uaAeLoL85Yo+vlo5DIBTLs=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/fc607e4a-3973-4e04-bf68-8ef54e7a94c9)
+
+3. Click ‘**Create a data view**'
+![SdtMHY+oXzoapHVbRbqNa8QqvpHhcY2pJVH32VopuzM=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/0dc9de72-fd3c-4d7b-9da5-81821036d920)
+
+4. Include the Name, Index pattern and select timestamp from the Timestamp field dropdown. Then click "**Save data view to Kibana**"
+   <img width="721" alt="i5mvnLfPh3XELKf9bnmPXPraG4HmLoTUFkUUgY9VSeQ=" src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/3d13a32c-f53b-44d3-acb3-00b244a1602a">
+
+5. In order to see the sample dataset, set the date range from Jan 3, 2020 to Jan 12, 2020
+   ![1WLkcBs5fL0qwk4GrmoHSAgsZR1fmSzpSCiKJS7pAhc=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/73855494-4b24-4606-be17-0064a4a1471c)
+
+6. Expand one of the transactions to see the fields you have to work with
+   ![FW1hPgY3BWgPGnTsoZeE+BBIQR6tR+uecVgn2nAioCc=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/49c217a9-f275-4d73-a9c5-d8dccfb6de95)
+   ![LlIScvfu4HaYj0k0TDFzIZlPWmFVlVkzISzze0LuGxI=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/48df6680-f215-4ef6-9015-c594a288ac41)
+
+# Task 7. Create a simple dashboard
+1. Select the Analytics "**Dashboard**" from the left Menu and then select "**Create a dashboard**"
+   <img width="530" alt="TYQW5e71llRm6WnX+HXD36VEnpbmqR+1lQnaKKmkg2U=" src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/f0ca4623-ead1-48bd-9b1f-946be1cdfd5c">
+
+2. Click "Create visualization" and then drag and drop the field "Records" onto the visualization canvas
+   ![0P41PXMebMPgklS+544r9EtJvIIWLPFuDKmPFPVU5yE=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/7bb54f44-99e6-497f-b15e-33d353bd6922)
+
+3. Click "**Save and Return**" to save the visualization and return to the dashboard. Grab the lower right corner of the visualization and resize it to look something like this
+   ![Z17YbH4C2gWHpCMoE0O1QbkNi0h3x1Jk9ReSLXCXDYI=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/b723e46f-d5ae-4164-9aba-ccf0181da024)
+
+This bar chart displays the number of transactions that occurred over the time frame. It will also make it easy for the user to zoom in to a specific day or hour that they are interested in. <br/>
+
+4. Click "**Create visualization**" to add another visualization to the dashboard, again drag and drop the field "**Records**" onto the canvas. Change the visualization type to "**Legacy Metric**". Click "**Save and return**" to save the visualization and return to the Dashboard.
+<img width="486" alt="STvBbWtTtAF5UX5X2vB2MElaVQOUNPJSN60FNbkK3PE=" src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/b1fba5d9-cdb7-428f-9309-8744336df135">
+
+5. Resize and rearrange to visualizations to look something like this:
+   ![ISjLxdpeLmIMA46Ig9_9mXqA1fKiZBRBMtkPYSwudDw=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/f7ec3ed2-4c4a-44bf-8075-faf368966397)
+
+6. Click "**Create visualization**" and drag and drop the file "**absolute_amount**" onto the canvas. Change the visualization type to "**Area**" and set the vertical Axis to "**Average**". Click "**Save and return**"
+<img width="370" alt="m5oANTEl+djuEGzu7ggt3Tt9Cq70PgcMoFkg7uHUBrM=" src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/d26a6ce4-6bc9-4845-a918-b480bd0b7704">
+
+7. Click "**Create visualization**" and select the Donut visualization type. Drag the field "**gender.keyword**" onto the "**Slice by**" field, and drag the "**running_balance.amount**" field onto the metric field. Change the metric function from Median to Average. Click "**Save and return**"
+   ![4Q1IOrC9bbS6CgntgjF1dEG5KygcNnEg3zEVlRQsXqk=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/a6851d67-9865-4447-9333-6bc587cf74dd)
+
+8. Resize and rearrange the visualizations to look something like this
+   ![pQvWmieQaFNAaotSdk+__1+GYZLP0IhF24KXoks2+GU=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/17fa439d-0a9c-4453-ba5f-077ddae0325b)
+
+9. Click "**Save**" and enter a title for your Dashboard, check "**Store time with dashboard**" to set the current time range everytime you load the dashboard in the future. Click "**Save**" to finish saving your dashboard.
+    <img width="449" alt="Cg6hKNYp_fZxPSI2XclxN8PC0CARkvfu2esBDCS5Ink=" src="https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/eb5b2437-94b8-41b9-99af-ab7cbf5fef44">
+
+Congratulations, you have created your first dashboard.
+
+See if you can create some of these visualizations from the data:
+
+  - Create three of the below visualizations in the dashboard, ‘Transaction Count’, ‘Customer Count’ and ‘Top 10 Spenders pie chart’
+
+![tSk5RWmwj8EnWBo+FMeXwlaD699mUsD5pV3SyFhcc6o= (1)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/8464a977-9681-4cad-b350-940395cfac0f)
+
+Congratulations!
+In this workshop, you have:
+
+  - Simulated exporting mainframe financial data (accounts and transactions)
+
+  - Imported mainframe data into BigQuery
+
+  - Explored and normalized the data using SQL in BigQuery
+
+  - Loaded the normalized data into Elastic using DataFlow
+
+  - Created a "time series" dashboard to visualize the financial data
+
+### Next Steps / Learn More
+  - [Elastic](https://www.elastic.co/products/) on the Google Cloud Marketplace!
+  - [Elastic Cloud](https://console.cloud.google.com/marketplace/browse?q=Elastic&utm_source=Elastic&utm_medium=qwiklabs&utm_campaign=Qwiklabs%20to%20Marketplace) offers a fully managed experience so that you can focus on your data instead of managing the cluster. You can check it out [here](https://www.elastic.co/cloud/) and play with a free trial.
+  - Check out the [Elastic Integrations](https://www.elastic.co/integrations/) page and see how easily you can stream in logs, metrics, traces, content, and more from your apps, endpoints, infrastructure, cloud, network, workplace tools, and every other common source in your ecosystem.
+  - Leverage the out-of-the-box [solutions](https://www.elastic.co/products/) to give your Elastic project a jump start

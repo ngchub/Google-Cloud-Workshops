@@ -1,4 +1,6 @@
-This lab was developed with one of the Google partner, Elastic.
+This workshop was developed with one of the Google partner, Elastic.
+#### $\textcolor{red}{\textsf{This workshop is paid.}}$  
+For Google funds and pricing, you can reach us at support@ngc.com.tr and get detailed information.
 
 # Overview
 

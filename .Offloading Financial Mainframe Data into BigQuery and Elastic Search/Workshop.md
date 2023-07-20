@@ -213,9 +213,11 @@ gcloud dataflow flex-template run bqtoelastic-`date +%s` --template-file-gcs-loc
 ```
 
 This should generate a message similar to the one below
+
 ![VWIQC6xzJzgf412MwvsF9jte70x+zub4dWGxIGrrwIc=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/c106a7d1-c066-4839-b01f-10fd00e8b05c)
 
 3. Go to **Dataflow** → **Jobs** to make sure you job is running
+4. 
 ![+ENDmiSgQjcmTRekOmN9pu1qIPwZSyRXjmDW3kKV7pE=](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/0c49c7dc-2308-47e6-b0ad-7e9082ebea33)
 
 # Task 6. Explore the data in Elastic

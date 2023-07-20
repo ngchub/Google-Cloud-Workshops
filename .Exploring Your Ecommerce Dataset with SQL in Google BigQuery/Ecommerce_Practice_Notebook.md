@@ -18,6 +18,10 @@ For more information about Big Query please follow the link: https://cloud.googl
 
 
 
+https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/6dc2b883-a13d-415e-9a26-45c03adad672
+
+
+
 BigQuery is a serverless and cost-effective enterprise data warehouse that works across clouds and scales with your data. Use built-in ML/AI and BI for insights at scale. 
 
 Let's get started.
@@ -28,7 +32,6 @@ Let's get started.
 After login or sign into with you account:
 2. Go to Navigation Menu and select **Big Query**
 
-https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/ddcbec06-67a4-4f12-9167-3fe6472eb2fd"
 
 ## Adding ga4_obfuscated_sample_ecommerce dataset into Big Query
 

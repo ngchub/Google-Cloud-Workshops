@@ -63,3 +63,29 @@ Google has learned that building responsibility into any AI deployment makes bet
 If at any point in that trust is broken, we run the risk of AI deployment is being stalled, unsuccessful, or at worst harmful to stakeholders those products affect.
 
 
+***This all fits into Google belief that responsible AI equals successful AI.***
+
+
+While AI principles help ground a group in shared commitments, not everyone will agree with every decision made about how products should be designed responsibly.This is why it's important to develop robust processes that people can trust. Even if they don't agree with the end decision, they trust the process that drove the decision.
+
+## & AI Principles at Google
+
+In June 2018, Google announced seven AI principles to guide its work.
+These are concrete standards that actively govern its research and product development and affect its business decisions.
+1. **AI should be socially beneficial**: Any project should take into account a broad range of social and economic factors, and Google will proceed only where we believe that the overall likely benefits substantially exceed the foreseeable risks and downsides.
+2. **AI should avoid creating or reinforcing unfair bias.**: Google seek to avoid unjust effects on people, particularly those related to sensitive characteristics, such as race, ethnicity, gender, nationality, income, sexual orientation, ability, and political or religious belief.
+3. **AI should be built and tested for safety.**: Google will continue to develop and apply strong safety and security practices to avoid unintended results that create risks of home.
+4. **AI should be accountable to people.**: Google will design AI systems that provide appropriate opportunities for feedback, relevant explanations, and appeal.
+5. **AI should incorporate privacy design principles.**: Google will give opportunity for notice and consent, encourage architectures with privacy safeguards, and provide appropriate transparency and control over the use of data.
+6. **AI should uphold high standards of scientific excellence.**: Google will work with a range of stakeholders to promote thoughtful leadership in this area, during on scientifically rigorous and multi-disciplinary approaches.Google will responsibly share AI knowledge by publishing educational materials, best practices, and research thus enable more people to develop useful AI applications.
+7. **AI should be made available for uses that accord with these principles.**:Many technologies have multiple uses.We'll work to limit potentially harmful or abusive applications.
+
+In addition to these seven principles, there are certain AI applications that Google will not pursue. Google will not design or deploy AI in these four application areas : Technologies that cause or are likely to cause overall harm. 
+Weapons or other technologies whose principal purpose or implementation is to cause or directly facilitate injury to people. Technologies that gather or use information for surveillance that violates internationally accepted norms, and technologies whose purpose contravene is widely accepted principles of international law and human rights. Establishing principles was a starting point rather than an end.
+What remains true is that our AI principles rarely give Google direct answers, to Google questions on how to build our products.
+   
+They don't and shouldn't allow us to sidestep hard conversations.They are a foundation that establishes what Google stand for, what Google build, and why Google build it.
+
+
+They are core to the success of our enterprise AI offerings.
+

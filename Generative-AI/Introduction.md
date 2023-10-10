@@ -10,7 +10,15 @@ Large language models are also a subset of deep learning.
 
 ![LLMs](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/7c44d81d-b172-4c37-b51c-8ecf6c5bb19f)
 
+## Discriminative vs. Generative Technique
 
+![discriminative_generative_tech](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/674d22dc-d8c5-4447-af8b-38f52fc40a76)
+
+The discriminative model learns the conditional probability distribution or the probability of y, our output, given x, our input, that this is a dog and classifies it as a dog and not a cat.
+
+The generative model learns the joint probability distribution or the probability of x and y and predicts the conditional probability that this is a dog and can then generate a picture of a dog.
+
+So to summarize, generative models can generate new data instances while discriminative models discriminate between different kinds of data instances.
 
   - GenAI is a type of artificial intelligence that creates new content based on what it has learned from existing content. <br/>
 

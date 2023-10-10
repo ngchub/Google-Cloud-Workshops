@@ -21,7 +21,7 @@ There isn't a universal definition of responsible AI, nor is there a simple chec
 Instead, organizations are developing their own AI principles that reflect their mission and values.
 
 
-![chrome-capture-2023-9-10 (2)](https://github.com/nildenist/Generative-AI/assets/28653377/a9b7838a-469d-415c-be2f-fa1638b4f54c) 
+![chrome-capture-2023-9-10 (2)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/2c258b3e-b621-4c34-b5a5-234f8e92c99a)
 
 While these principles are unique to every organization, if you look for common themes, you find a consistent set of ideas across **transparency**, **fairness**, **accountability**, and **privacy**.
 
@@ -29,7 +29,7 @@ Google's approach to responsible AI is rooted in a commitment, to strive towards
 
 Google has incorporated responsibility by design into its products, and even more importantly its organization.
 
-![chrome-capture-2023-9-10 (3)](https://github.com/nildenist/Generative-AI/assets/28653377/30681b17-c0db-436d-aca2-37cc7c9a66e8)
+![chrome-capture-2023-9-10 (3)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/e5c84b4c-ab60-44bc-80ce-80fff7bcbc01)
 
 
 Google all has a role to play in how responsible AI is applied. Whatever stage in the AI process you're involved with, from **design** to **deployment** or **application**, the decisions you make have an impact. Therefore, it's important that you too have a <ins>defined</ins> and <ins>repeatable</ins> process for using AI responsibly.
@@ -46,7 +46,7 @@ Whether it's the decision to use generative AI to solve a problem as opposed to 
 
 This means that every decision point requires **consideration** and **evaluation** to ensure that choices have been made **responsibly** from concept through deployment and maintenance.
 
-![chrome-capture-2023-9-10 (4)](https://github.com/nildenist/Generative-AI/assets/28653377/b1f81bed-a09a-434c-8c7d-95fd86e776bd)
+![chrome-capture-2023-9-10 (4)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/875d2c11-0856-4bdb-96f0-345ffdcbd69a)
 
 Because there's potential to impact many areas of society, not to mention people's daily lives, it's important to develop these technologies with ethics in mind.
 
@@ -58,7 +58,7 @@ Ethics and responsibility are important, not least because they represent the ri
 
 Google has learned that building responsibility into any AI deployment makes better models and builds trust with our customers and our customers customers. 
 
-![chrome-capture-2023-9-10 (5)](https://github.com/nildenist/Generative-AI/assets/28653377/ab71d07d-438e-4bb8-bc46-e5cc4563de77)
+![chrome-capture-2023-9-10 (5)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/58e49d24-88f6-417c-ac45-963c109c254b)
 
 If at any point in that trust is broken, we run the risk of AI deployment is being stalled, unsuccessful, or at worst harmful to stakeholders those products affect.
 

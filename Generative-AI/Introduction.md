@@ -5,6 +5,13 @@ Generative AI is a subset of Deep Learning.
 
 ![Screenshot from 2023-10-10 20-31-24](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/59d3fc8a-2eb0-4b21-bf56-603fef5da88d)
 
+
+Large language models are also a subset of deep learning.
+
+![LLMs](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/7c44d81d-b172-4c37-b51c-8ecf6c5bb19f)
+
+
+
   - GenAI is a type of artificial intelligence that creates new content based on what it has learned from existing content. <br/>
 
   - The process of learning from existing content is called training and results in the creation of a ***statistical model***.

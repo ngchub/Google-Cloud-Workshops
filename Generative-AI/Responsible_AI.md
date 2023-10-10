@@ -7,11 +7,11 @@ These systems are developing at an extraordinary pace.
 Yet, despite these remarkable advancements, AI is not **infallible**.
 
 
-![ResAI_1](https://github.com/nildenist/Generative-AI/assets/28653377/17b5945c-9e57-4ea5-8f72-ff77bacb2bf8)
+![ResAI_1](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/efb3256c-338e-4fcf-9230-d73c5e578a05)
 
 Technology is a reflection of what exist in society.
 
-![resAI_2](https://github.com/nildenist/Generative-AI/assets/28653377/bbab9ac1-6fd5-4036-90d2-6ec6ca1eb55d)
+![resAI_2](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/fe3a95a9-ab58-4c12-bca7-656096447c13)
 
 Without good practices, AI may replicate existing issues or bias and amplify them.
 
@@ -104,10 +104,11 @@ They are core to the success of our enterprise AI offerings.
   <summary><b>Click here for the answer</b></summary>
 <br>
 <div id="q79" class="collapse">
+   
 - [ ] Decisions made at a late stage in a project do not make an impact on responsible AI. <br/>
 - [x] Decisions made at all stages in a project make an impact on responsible AI. <br/>
 - [ ] Only decisions made by the project owner at any stage in a project make an impact on responsible AI. <br/>
-- [ ] Decisions made at an early stage in a project do not make an impact on responsible AI. <br/>                        
+- [ ] Decisions made at an early stage in a project do not make an impact on responsible AI. <br/>
 
  </b>
 </div>

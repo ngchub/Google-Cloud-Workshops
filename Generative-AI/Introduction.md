@@ -1,6 +1,10 @@
 # What is Generative AI?
 Generative AI is a type of artificial intelligence (AI) that can create new content, such as text, images, audio, and video. It does this by learning from existing data and then using that knowledge to generate new and unique outputs.
 
+Generative AI is a subset of Deep Learning.
+
+![Screenshot from 2023-10-10 20-31-24](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/59d3fc8a-2eb0-4b21-bf56-603fef5da88d)
+
   - GenAI is a type of artificial intelligence that creates new content based on what it has learned from existing content. <br/>
 
   - The process of learning from existing content is called training and results in the creation of a ***statistical model***.

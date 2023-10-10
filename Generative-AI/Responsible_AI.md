@@ -68,7 +68,7 @@ If at any point in that trust is broken, we run the risk of AI deployment is bei
 
 While AI principles help ground a group in shared commitments, not everyone will agree with every decision made about how products should be designed responsibly.This is why it's important to develop robust processes that people can trust. Even if they don't agree with the end decision, they trust the process that drove the decision.
 
-## & AI Principles at Google
+## AI Principles at Google
 
 In June 2018, Google announced seven AI principles to guide its work.
 These are concrete standards that actively govern its research and product development and affect its business decisions.

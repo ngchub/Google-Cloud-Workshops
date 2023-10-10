@@ -60,7 +60,7 @@ Google has learned that building responsibility into any AI deployment makes bet
 
 ![chrome-capture-2023-9-10 (5)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/58e49d24-88f6-417c-ac45-963c109c254b)
 
-If at any point in that trust is broken, we run the risk of AI deployment is being stalled, unsuccessful, or at worst harmful to stakeholders those products affect.
+If at any point in that trust is broken, Google run the risk of AI deployment is being stalled, unsuccessful, or at worst harmful to stakeholders those products affect.
 
 
 ***This all fits into Google belief that responsible AI equals successful AI.***

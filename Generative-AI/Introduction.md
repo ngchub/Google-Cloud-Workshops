@@ -26,6 +26,16 @@ So to summarize, generative models can generate new data instances while discrim
 
   - When given a promt. GenAI uses this ***statistical model*** to predict what an expected response might be- and this generates new content.
 
+## When an input is image or text
+
+![input_image](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/42e8972c-86f4-4898-8659-c3d5b16b4d26)
+
+A generative image model takes an image as input and can output text, another image, or video. For example, under the output text, you can get visual question answering while under output image, an image completion is generated. And under output video, animation is generated. 
+
+
+A generative language model takes text as input and can output more text, an image, audio, or decisions. For example, under the output text, question answering is generated. And under output image, a video is generated. 
+
+![imput_text](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/8a973a23-c9ec-4fc1-a413-37f76ea03c96)
 
 
 ## What is a prompt?

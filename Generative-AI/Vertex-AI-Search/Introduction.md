@@ -10,7 +10,7 @@ This introduction is intended for developers that have some coding experience yo
    - 
 ![chrome-capture-2023-9-26 (1)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/9868829c-0d6f-45b1-8d17-3f2e473351be)
 
-## What is the difference og Gen AI?
+## What is the difference of Gen AI?
 
 Machine learning or predictive AI are the most classical models which are trained on historical data to classify or make predictions on similar data for example you would train a vision model to identify whether the animal is a cat by providing a data set of images labeled as cats or other animals then when you provide a new image the predictive model will be able to tell you whether it is a cat.
 
@@ -26,10 +26,10 @@ Machine learning or predictive AI are the most classical models which are traine
 **Competitive Advantage**: Google Cloud products Empower Enterprises to embrace the generative AI with the confidence that there's data governance built in this is especially important in highly regulated Industries like financial services and Healthcare. You need a guarantee that no one can see the questions your users are asking or the training data that provides your unique competitive advantage. <br/>
 **Match Cost to Value**:Google Cloud doesn't believe that one model fits all in fact bigger is not better especially from a cost of inference perspective large 300 billion parameter models can cost as much as one thousand dollars per user per year to run which adds up to one billion dollars for 1 million users. You shouldn't need to use a public model that has to search through the player rosters in every world cup or the inspiration for every Taylor Swift song in order to answer a question like when can I withdraw from my retirement account instead Google Cloud provides match to cost value that gives you the ability to choose the right model for the right job. <br/>
 **Grounded in facility**: In the Enterprise it's important not just to provide an answer but to prove where the answer came from and what information was used to create the answer this process ensures that your results are grounded in factuality. Enterprise customers have built stores of knowledge and data warehouses filled with facts they also integrate many third-party data sources with highly curated facts. <br/>
-**Easy to get started**: Google Cloud provides a wide range of easy to use tools including out of the box search in conversation and quick access apis this helps you to get started in days rather than requiring you to learn the Deep mathematics and generative AI or tune a model to every possible question that could be asked.
+**Easy to get started**: Google Cloud provides a wide range of easy to use tools including out of the box search in conversation and quick access apis this helps you to get started in days rather than requiring you to learn the Deep mathematics and generative AI or tune a model to every possible question that could be asked.<br/>
 **Manageable at scale**: Enterprises will need to manage many models user interfaces data corpora and Integrations with first and third-party data sources Google Cloud provides a manageable at scale platform that integrates into your existing user security data management and entitlements workflow. <br/>
 
-## Google Cloud'sapproach to Responsible AI
+## Google Cloud's approach to Responsible AI
 
    - Generative AI comes with its own set of unique challenges.
    - Google is integrating AI into its products boldly and with a deep sense of responsibility the highest standards of information.

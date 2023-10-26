@@ -63,13 +63,15 @@ There are a variety of opportunities across internal and external use cases addr
 
 ![chrome-capture-2023-9-26 (7)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/ce866d36-c536-48c9-8d0c-2646304c7fe7)
 
-**External use cases** that are scoped around servicing customers external to the Enterprise for example e-commerce media serving and customer service support. 
-**Functional use cases** that are scoped around servicing internal applications and vertical Solutions typically around knowledge workers such as knowledge bases document repositories and intranets. 
-**Technical use cases** that are scoped around servicing machine generated data and systems automation including infrastructure logging and debugging reports with Google Cloud's generative AI platforms powered by large language models.
+**External use cases** that are scoped around servicing customers external to the Enterprise for example e-commerce media serving and customer service support. <br/>
+**Functional use cases** that are scoped around servicing internal applications and vertical Solutions typically around knowledge workers such as knowledge bases document repositories and intranets.  <br/>
+**Technical use cases** that are scoped around servicing machine generated data and systems automation including infrastructure logging and debugging reports with Google Cloud's generative AI platforms powered by large language models. <br/>
 
 Developers are enabled to build immersive experiences with vertex AI search and conversation built into your applications transform the consumer search experience into an intuitive natural language experience that Delights your customers and drives conversion
 
+## Vertex AI and Vertex AI Search&Conversation
 
+Let's dive into Generative AI products in Google Cloud what each one has to offer and why you might choose one over another to provide a particular solution Google has two main types of generative AI products there are consumer products such as Bard or makerite which are like a supercharged version of the Google search bar consumer products are there for anyone to access with a consumer product such as 
 
 
 

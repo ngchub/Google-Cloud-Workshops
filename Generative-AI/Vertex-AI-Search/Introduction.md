@@ -33,8 +33,47 @@ Machine learning or predictive AI are the most classical models which are traine
 
    - Generative AI comes with its own set of unique challenges.
    - Google is integrating AI into its products boldly and with a deep sense of responsibility the highest standards of information.
-   - Integrity with it's AI principles this includes education research and tools including online training courses such as this one guidebooks research papers and our product documentation.
+   - Integrity with it's AI principles this includes education research and tools including online training courses, guidebooks, research papers and our product documentation.
    - There are also product and use case reviews such as customer AI use case reviews product development reviews and fairness testing additionally there are highly relevant responsible AI resources and tooling for new generative AI offerings.
    - These are being rapidly developed and will be coming soon in continuous development are governance and Assurance tooling to support the responsible development and implementation of AI in 2022 the vertex ai explainable ai offerings were expanded to include new features as part of model evaluation model monitoring and model registry to support data and model governance this is in addition to Google's open source responsible AI toolkit that's available to Google Cloud customers for their projects and anyone with an AI project at no cost
 
 ![chrome-capture-2023-9-26 (4)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/4eaab27a-2f5f-4ba0-8e8a-54a401505969)
+
+## Generative AI building blocks
+
+Google Cloud brings generative AI to organizations by uniting Foundation models with vertex AI search and conversation together they help you build transformative applications powered by your data.
+
+These are the fundamental building blocks of generative AI.
+
+![chrome-capture-2023-9-26 (5)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/b1f33349-39b7-4de4-9c35-886dae946216)
+
+A foundation model is any model that is trained on a broad variety of data at scale and can be adapted to a wide range of Downstream tasks and applications either by fine-tuning or using in context learning these models are the basis of many generative AI products. 
+
+**Vertex AI conversation** is a type of artificial intelligence that can simulate human conversation it's made possible by natural language processing a field of AI that allows computers to understand and process human language with vertex AI conversation. You can answer complex questions out of the box and easily add transactional capabilities such as multi-turn conversations that build upon context and completing API transactions. 
+
+**Vertex AI search** is an offering from Google Cloud that lets organizations quickly build generative AI powered search engines for customers and employees. Vertex AI search enables you to get quality results out of the box and you can easily customize these results according to your business needs such as responding to single independent queries with a lot of results and fine-grained control over results ranking 
+
+It's important to distinguish between the main vertex AI Enterprise Products. 
+
+![chrome-capture-2023-9-26 (6)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/2a85b6b2-cd93-490c-9de9-77e6e36ca5ef)
+
+**Vertex AI** is an end-to-end machine learning platform that allows you to serve and tune Foundation models to meet your customers specific needs and **Vertex AI Searching&Conversation** which enables fast application development leveraging the power of search immersive conversational experiences and Foundation models with Enterprise controls. 
+
+There are a variety of opportunities across internal and external use cases addressing the needs of customers staff and machines. You can build generative AI experiences for external users on your websites or internal Enterprise or technical applications.
+
+![chrome-capture-2023-9-26 (6)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/2a85b6b2-cd93-490c-9de9-77e6e36ca5ef)
+
+**External use cases** that are scoped around servicing customers external to the Enterprise for example e-commerce media serving and customer service support. 
+**Functional use cases** that are scoped around servicing internal applications and vertical Solutions typically around knowledge workers such as knowledge bases document repositories and intranets. 
+**Technical use cases** that are scoped around servicing machine generated data and systems automation including infrastructure logging and debugging reports with Google Cloud's generative AI platforms powered by large language models.
+
+Developers are enabled to build immersive experiences with vertex AI search and conversation built into your applications transform the consumer search experience into an intuitive natural language experience that Delights your customers and drives conversion
+
+
+
+
+
+
+
+
+

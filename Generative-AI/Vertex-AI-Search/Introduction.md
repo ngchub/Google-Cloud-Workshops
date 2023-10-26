@@ -61,7 +61,7 @@ It's important to distinguish between the main vertex AI Enterprise Products.
 
 There are a variety of opportunities across internal and external use cases addressing the needs of customers staff and machines. You can build generative AI experiences for external users on your websites or internal Enterprise or technical applications.
 
-![chrome-capture-2023-9-26 (6)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/2a85b6b2-cd93-490c-9de9-77e6e36ca5ef)
+![chrome-capture-2023-9-26 (7)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/ce866d36-c536-48c9-8d0c-2646304c7fe7)
 
 **External use cases** that are scoped around servicing customers external to the Enterprise for example e-commerce media serving and customer service support. 
 **Functional use cases** that are scoped around servicing internal applications and vertical Solutions typically around knowledge workers such as knowledge bases document repositories and intranets. 

@@ -31,13 +31,16 @@ Vertex AI Search&Conversation enables fast application development by leveraging
 ![chrome-capture-2023-9-27 (2)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/e19df9e3-2072-48bb-8ded-b4933a04f943)
 
 So if you an Enterprise looking for a Generative AI solution how do you decide which product to use. It's quite simple. 
-Once you've decided that your solution requires Generative AI you need to answer the question can this be solved with an out-of-the-box use case.
-If the answer is YES then Vertex AI search and conversation is the solution for you.
-If the answer is NO then you may require more customized and refined Solutions built inhouse using Vertex AI with Generative AI support.
+Once you've decided that your solution requires Generative AI you need to answer the question can this be solved with an out-of-the-box **(OOTB)** use case.
+
+If the answer is ***YES*** then Vertex AI search and conversation is the solution for you. <br/>
+If the answer is ***NO*** then you may require more customized and refined Solutions built inhouse using Vertex AI with Generative AI support.
 
 ![enterprise_AI_solutions](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/83a7dc33-ad13-4327-aa54-156adac00e9e)
 
-Chat, search and Generative AI independently add a lot of value to the Enterprise. Vertex AI conversation is wonderful when you can have humanlike interactions to solve problems and find information Vertex AI search is useful when you can scale a wide range of siloed data to retrieve accurate and trusted information. Generative AI is quickly becoming the path ***to creating new content and experiences*** to excite your customers. Customizing, tuning and training Generative AI models has never been more important to provide a safe experience and bringing these capabilities together enables Enterprise developers to build even more delightful user experiences. 
+Chat, search and Generative AI independently add a lot of value to the Enterprise. 
+
+Vertex AI conversation is wonderful when you can have humanlike interactions to solve problems and find information Vertex AI search is useful when you can scale a wide range of siloed data to retrieve accurate and trusted information. Generative AI is quickly becoming the path ***to creating new content and experiences*** to excite your customers. Customizing, tuning and training Generative AI models has never been more important to provide a safe experience and bringing these capabilities together enables Enterprise developers to build even more delightful user experiences. 
 
 ![chrome-capture-2023-9-27 (3)](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/a4ca52b1-1a85-4912-ba42-292938e176f2)
 

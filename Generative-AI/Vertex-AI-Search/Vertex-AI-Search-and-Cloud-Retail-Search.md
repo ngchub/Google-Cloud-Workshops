@@ -69,3 +69,127 @@ Google Cloud's out-of-the-box search products are fast and easy to set up even i
 To develop a customized or tuned search product your developers should have a firm understanding of machine learning and to create a fully custom-built search product you'll require AI practitioners with Advanced machine learning abilities in model training and tuning. 
 
 It's important to know that tunable search and build your own search are future capabilities of the product still in development and will be available soon.
+
+
+Let's practice our knowledge for Vertex AI Search&Converation 
+
+<h3> Question 1.What features are available as part of Vertex AI Search and Conversation? </h3>
+
+- [ ] Vertex AI Search, Personalize, Dialogflow Agents <br/>
+- [ ] Vertex AI Search, Coding, Personalize <br/>
+- [ ] Vertex AI Search, Image Generation, Conversational AI <br/>
+
+</div>
+
+<details>
+  <summary><b>Click here for the answer</b></summary>
+<br>
+<div id="q79" class="collapse">
+   
+- [x] Vertex AI Search, Personalize, Dialogflow Agents <br/>
+- [ ] Vertex AI Search, Coding, Personalize <br/>
+- [ ] Vertex AI Search, Image Generation, Conversational AI <br/>
+
+ </b>
+</div>
+</details>
+
+
+<h3> Question 2. What product should an enterprise use if they don’t have any ML expertise? (Select all that apply) </h3>
+
+- [ ] MakerSuite <br/>
+- [ ] Vertex AI <br/>
+- [ ] Vertex AI Search and Conversation <br/>
+- [ ] Bard <br/>
+</div>
+
+<details>
+  <summary><b>Click here for the answer</b></summary>
+<br>
+<div id="q79" class="collapse">
+   
+- [ ] MakerSuite <br/>
+- [x] Vertex AI <br/>
+- [x] Vertex AI Search and Conversation <br/>
+- [ ] Bard <br/>
+
+ </b>
+</div>
+</details>
+
+
+<h3> Question 3. Why would you choose Google Cloud instead of the competition for Generative AI applications? </h3>
+
+- [ ] You can learn from other customers data
+- [ ] You can create enterprise-scale Generative AI applications
+- [ ] All of the options are correct
+- [ ] You don’t have to worry about where the answer came from
+
+</div>
+
+<details>
+  <summary><b>Click here for the answer</b></summary>
+<br>
+<div id="q79" class="collapse">
+  
+- [ ] You can learn from other customers data
+- [x] You can create enterprise-scale Generative AI applications
+- [ ] All of the options are correct
+- [ ] You don’t have to worry about where the answer came from
+
+
+ </b>
+</div>
+</details>
+
+<h3> Question 4. What tool should you use to provide search functionality in your financial services product? </h3>
+
+- [ ] Cloud Retail Search
+- [ ] Google Cloud Search
+- [ ] Vertex AI Search
+
+</div>
+
+<details>
+  <summary><b>Click here for the answer</b></summary>
+<br>
+<div id="q79" class="collapse">
+  
+- [ ] Cloud Retail Search
+- [ ] Google Cloud Search
+- [x] Vertex AI Search
+ </b>
+</div>
+</details>
+
+<h3> Question 5. What product should you use for your enterprise use cases? (Select all that apply) </h3>
+
+- [ ] MakerSuite + Vertex AI Search and Conversation
+- [ ] Bard + MakerSuite
+- [ ] Bard + Vertex AI
+- [ ] Vertex AI + Vertex AI Search and Conversation
+
+</div>
+
+<details>
+  <summary><b>Click here for the answer</b></summary>
+<br>
+<div id="q79" class="collapse">
+  
+- [ ] MakerSuite + Vertex AI Search and Conversation
+- [ ] Bard + MakerSuite
+- [ ] Bard + Vertex AI
+- [x] Vertex AI + Vertex AI Search and Conversation
+
+ </b>
+</div>
+</details>
+
+
+
+
+
+
+
+
+

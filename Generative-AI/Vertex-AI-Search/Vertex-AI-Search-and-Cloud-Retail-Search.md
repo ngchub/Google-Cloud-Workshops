@@ -65,4 +65,7 @@ Another factor that can affect your decision is your team's application developm
 
 ![personas](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/4c785608-9f26-42c9-b224-9874171d07cd)
 
-Google Cloud's out-of-the-box search products are fast and easy to set up even if your application developers have no machine learning experience. To develop a customized or tuned search product 
+Google Cloud's out-of-the-box search products are fast and easy to set up even if your application developers have no machine learning experience. 
+To develop a customized or tuned search product your developers should have a firm understanding of machine learning and to create a fully custom-built search product you'll require AI practitioners with Advanced machine learning abilities in model training and tuning. 
+
+It's important to know that tunable search and build your own search are future capabilities of the product still in development and will be available soon.

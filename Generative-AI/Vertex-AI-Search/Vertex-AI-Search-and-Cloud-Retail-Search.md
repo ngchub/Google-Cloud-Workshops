@@ -55,7 +55,7 @@ Some important details to ask when trying to decide between **Vertex AI Search**
 ![selection_criteria](https://github.com/ngchub/Google-Cloud-Workshops/assets/28653377/e6bbdf69-f670-4d3f-9377-4acdf060265b)
 
 
-  - Are y0u earning revenue online?
+  - Are you earning revenue online?
   - Are you selling products?
   - Does each product have its own price?
   - Does your data fit the retail product catalog schema?

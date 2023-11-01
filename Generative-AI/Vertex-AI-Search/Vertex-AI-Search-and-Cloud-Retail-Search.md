@@ -71,7 +71,7 @@ To develop a customized or tuned search product your developers should have a fi
 It's important to know that tunable search and build your own search are future capabilities of the product still in development and will be available soon.
 
 
-Let's practice our knowledge for Vertex AI Search&Converation 
+Let's practice our knowledge for Vertex AI Search&Conversation:
 
 <h3> Question 1.What features are available as part of Vertex AI Search and Conversation? </h3>
 

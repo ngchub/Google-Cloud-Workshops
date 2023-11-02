@@ -30,11 +30,9 @@ There are two key components to Vertex AI Search:
 
 **Vertex AI Search** is a horizontal search platform that is not industry specific. It's used to build an AI enabled search capability and embedded vertical solution.
 
-Developers and data scientists from a wide range of Industries have started to use vertex AI search.
+Developers and data scientists from a wide range of Industries have started to use Vertex AI search for use cases such as medical records history, artifact search, customer support and manufacturing inventory search. 
 
-For use cases such as medical records history artifact search customer support and manufacturing inventory search. 
-
-Vertex AI search helps deliver more relevant results than traditional keyword-based search techniques by using natural language processing and machine learning techniques.
+Vertex AI Search helps deliver more relevant results than traditional keyword-based search techniques by using natural language processing and machine learning techniques.
 
 This allows Vertex AI Search to infer relationships within the content and the intent of the user's query input. 
 

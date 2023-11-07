@@ -13,5 +13,8 @@ There are three main challenges when implementing a search service for an Enterp
 
   - Vertex AI Search is an out of the box solution which means you can deploy a fully managed search engine quickly. You don't have to build and lead an entire devops team to manage it.
   - It also utilizes semantic search which provides a Next Generation search experience.
-  - Vertex AI search provides LLM based summarization multimodal search and chatbot integration utilizing the latest in generative AI technology one of the greatest features of Vertex AI.
+  - Vertex AI search provides LLM based summarization multimodal search and chatbot integration utilizing the latest in Generative AI technology.
+  
+  
+  One of the greatest features of Vertex AI Search & Conversation is its ease of use for developers this is driving new opportunities with the added benefits of operational efficiencies cost savings and value creation for
 

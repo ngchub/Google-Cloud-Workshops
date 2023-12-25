@@ -34,21 +34,21 @@ As of November 2020, 4 trillion photos were stored in Google Photos, and every w
 
 Computer vision is a field of artificial intelligence that enables machines to interpret and make decisions based on visual data. There are various problems and applications that can be addressed using computer vision, and the Google Vision API offers additional benefits in this regard. Here are some problems that computer vision can solve, along with the extra benefits of the Google Vision API:
 
-Image Classification: Computer vision can classify images into different categories. This is useful in scenarios where you want to automatically categorize or label images.
+**Image Classification:** Computer vision can classify images into different categories. This is useful in scenarios where you want to automatically categorize or label images.
 
-Object Detection: Detecting and locating objects within an image or video stream. This is commonly used in surveillance, autonomous vehicles, and robotics.
+**Object Detection:** Detecting and locating objects within an image or video stream. This is commonly used in surveillance, autonomous vehicles, and robotics.
 
-Facial Recognition: Identifying and verifying individuals based on facial features. It is used in security systems, authentication, and social media applications.
+**Facial Recognition:** Identifying and verifying individuals based on facial features. It is used in security systems, authentication, and social media applications.
 
-Image Segmentation: Dividing an image into segments to identify and understand the different objects and regions within it. This is helpful in medical imaging, autonomous vehicles, and industrial applications.
+**Image Segmentation:** Dividing an image into segments to identify and understand the different objects and regions within it. This is helpful in medical imaging, autonomous vehicles, and industrial applications.
 
-OCR (Optical Character Recognition): Extracting text from images or documents. This is used in digitizing printed documents, recognizing license plates, and more.
+**OCR (Optical Character Recognition):** Extracting text from images or documents. This is used in digitizing printed documents, recognizing license plates, and more.
 
-Gesture Recognition: Understanding and interpreting gestures made by humans. This is applicable in virtual reality, gaming, and human-computer interaction.
+**Gesture Recognition:** Understanding and interpreting gestures made by humans. This is applicable in virtual reality, gaming, and human-computer interaction.
 
-Medical Image Analysis: Analyzing medical images for diagnosis and treatment planning. It includes tasks like tumor detection, organ segmentation, and pathology analysis.
+**Medical Image Analysis:** Analyzing medical images for diagnosis and treatment planning. It includes tasks like tumor detection, organ segmentation, and pathology analysis.
 
-Anomaly Detection: Identifying unusual patterns or deviations in visual data. This is crucial for quality control in manufacturing and surveillance applications.
+**Anomaly Detection:** Identifying unusual patterns or deviations in visual data. This is crucial for quality control in manufacturing and surveillance applications.
 
 ## The Google Vision API offers several extra benefits:
 

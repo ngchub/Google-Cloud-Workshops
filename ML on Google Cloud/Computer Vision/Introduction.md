@@ -36,13 +36,21 @@ Computer vision is a field of artificial intelligence that enables machines to i
 
 **Image Classification:** Computer vision can classify images into different categories. This is useful in scenarios where you want to automatically categorize or label images.
 
-**Object Detection:** Detecting and locating objects within an image or video stream. This is commonly used in surveillance, autonomous vehicles, and robotics.
+**Edge Detection:** Edge detection is a technique used to extract the edges from an image by identifying the boundaries of objects within an image. It is the initial step for object recognition. The main principle of edge detection is detecting changes in brightness and intensity levels.
+
+**Object recognition:** Similarly, object recognition identifies the objects in an image by outputting the class labels and class probabilities of the objects.
+
+**Object Detection:** Detecting and locating objects within an image or video stream. This is commonly used in surveillance, autonomous vehicles, and robotics. Unlike object recognition, object detection both tells you which objects are present in the image and outputs bounding boxes (x, y, width, height) to indicate the location of the objects inside the bounding box.
 
 **Facial Recognition:** Identifying and verifying individuals based on facial features. It is used in security systems, authentication, and social media applications.
 
 **Image Segmentation:** Dividing an image into segments to identify and understand the different objects and regions within it. This is helpful in medical imaging, autonomous vehicles, and industrial applications.
 
+**Pattern Recognition:** Pattern recognition detects and identifies repeated shapes, colors, and other visual indicators in visual inputs. Popular pattern recognition applications for computer vision include facial recognition, movement recognition, OCR, and medical image recognition.
+
 **OCR (Optical Character Recognition):** Extracting text from images or documents. This is used in digitizing printed documents, recognizing license plates, and more.
+
+**Feature Matching:** Feature matching is a type of pattern detection that compares the features of images That might be different in orientations, perspective, lighting, sizes, and colors. Automatic object tracking, 3D object reconstruction, robot navigation, image retrieval and indexing are just some of the applications of feature detection and matching.
 
 **Gesture Recognition:** Understanding and interpreting gestures made by humans. This is applicable in virtual reality, gaming, and human-computer interaction.
 
